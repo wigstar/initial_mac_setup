@@ -1,0 +1,43 @@
+---
+- hosts: 127.0.0.1
+  connection: local
+
+  tasks:
+  - name: Brew install or update preinstalled
+    homebrew:
+      name: "{{ item }}"
+      state: present
+    with_items:
+      - git
+      - elixir
+      - ruby
+      - node
+      - mongodb
+      - docker
+      - thefuck
+      - zsh
+
+  - name: Brew cask install applications
+    homebrew_cask:
+      name: "{{ item }}"
+      state: present
+    with_items:
+      - google-chrome
+      - firefox
+      - iterm2
+      - intellij-idea
+      - webstorm
+      - atom
+      - sublime-text
+      - charles
+      - sourcetree
+      - spotify
+      - slack
+
+  - name: Install oh my zsh
+    command: sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
+  - name: Copy configured zshrc
+    copy:
+      src: ./zshrc
+      dest: ~/zshrc      
