@@ -10,6 +10,7 @@ osascript <<EOD
   tell application "System Events"
     tell process "Install Command Line Developer Tools"
       keystroke return
+      delay 3
       keystroke tab
       keystroke tab
       keystroke return
@@ -24,6 +25,19 @@ while kill -0 $PROCESS_PID >/dev/null 2>&1
   do
     echo "Downloading..."
     sleep 10
+
+    osascript <<EOD
+      tell application "System Events"
+        tell process "Install Command Line Developer Tools"
+          tell (first button whose name is "Done")
+            if exists then
+              click
+            end if
+          end tell
+        end tell
+      end tell
+    EOD
+
 done
 
 
