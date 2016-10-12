@@ -1,6 +1,6 @@
 ### Initial Setup Script
 
-Mish mash of Applescipt, Bash Script, and Ansible to provision a new machine because y'know more time to sip on tea.
+Mish mash of Applescript, Bash Script, and Ansible to provision a new machine because y'know more time to sip on tea.
 
 Installs:
 * xcode command line Tools
@@ -27,3 +27,4 @@ Installs:
 * spotify
 * slack
 * oh-my-zsh
+* fuze
