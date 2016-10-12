@@ -91,7 +91,7 @@ NORMAL="$(tput sgr0)"
 
 echo "${YELLOW}RISE AND GRIND${NORMAL}"
 echo "${YELLOW}BREATHE${NORMAL}"
-echo "${BOLD}${YELLOW} HEAD IN THE GAME${NORMAL}"
+echo "${BOLD}${YELLOW}HEAD IN THE GAME${NORMAL}"
 
 alias gs='git status'
 alias ga='git add'
