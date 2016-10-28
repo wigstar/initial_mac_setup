@@ -15,6 +15,7 @@ Installs:
 * docker
 * thefuck
 * zsh
+* elasticsearch
 * google-chrome
 * firefox
 * iterm2
@@ -28,3 +29,13 @@ Installs:
 * slack
 * oh-my-zsh
 * fuze
+* 1password
+* (atom plugin)  atom-terminal
+* (atom plugin) platformio-atom-ide-terminal
+* (atom plugin) react
+* (atom plugin) script
+
+
+#### ToDo:
+* one time password entry
+* return keystrokes

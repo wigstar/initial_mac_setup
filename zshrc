@@ -99,3 +99,5 @@ alias gpull='git pull'
 alias gpush='git push'
 alias gc='git commit'
 alias subl='open -a "Sublime Text"'
+
+eval $(thefuck --alias)

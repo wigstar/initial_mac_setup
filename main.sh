@@ -6,3 +6,5 @@ sh homebrew.sh
 sh ansible.sh
 
 ansible-playbook -i inventory playbook.yml -vvvv
+
+sh atom.sh
