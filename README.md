@@ -15,6 +15,7 @@ Installs:
 * docker
 * thefuck
 * zsh
+* python3
 * google-chrome
 * firefox
 * iterm2

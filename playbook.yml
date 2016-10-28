@@ -17,6 +17,7 @@
       - thefuck
       - zsh
       - wget
+      - python3
 
   - name: Brew cask install applications
     homebrew_cask:
