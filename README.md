@@ -15,7 +15,6 @@ Installs:
 * docker
 * thefuck
 * zsh
-* elasticsearch
 * google-chrome
 * firefox
 * iterm2
@@ -31,6 +30,7 @@ Installs:
 * fuze
 * 1password
 * java
+* elasticsearch (did it non brew way, personal preference thing)
 * (atom plugin)  atom-terminal
 * (atom plugin) platformio-atom-ide-terminal
 * (atom plugin) react
@@ -38,5 +38,6 @@ Installs:
 
 
 #### ToDo:
+* move apm and es into ansible playbook
 * one time password entry
 * return keystrokes

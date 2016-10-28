@@ -16,6 +16,7 @@
       - docker
       - thefuck
       - zsh
+      - wget
 
   - name: Brew cask install applications
     homebrew_cask:
@@ -36,14 +37,6 @@
       - 1password
       - java
 
-  - name: Brew install or update preinstalled items that are dependent on Brew cask downloads
-    homebrew:
-      name: "{{ item }}"
-      state: present
-    with_items:
-      - elasticsearch
-
-
   - name: Install oh my zsh
     shell: sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
@@ -51,6 +44,11 @@
     copy:
       src: ./zshrc
       dest: ~/.zshrc
+
+  - name: Create projects directory
+    file:
+      path: ~/projects
+      state: directory
 
   - name: Create tmp directory
     file:
