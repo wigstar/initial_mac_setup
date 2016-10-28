@@ -3,7 +3,7 @@
 # Install Atom Plugins
 echo "Downloading Atom Plugins..."; echo
 apm install atom-terminal
-apm install platformio-atom-ide-terminal
+apm install platformio-ide-terminal
 apm install react
 apm install script
 
