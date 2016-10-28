@@ -30,6 +30,7 @@ Installs:
 * oh-my-zsh
 * fuze
 * 1password
+* java
 * (atom plugin)  atom-terminal
 * (atom plugin) platformio-atom-ide-terminal
 * (atom plugin) react
