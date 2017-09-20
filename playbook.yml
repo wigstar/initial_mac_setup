@@ -10,7 +10,6 @@
     with_items:
       - node
       - git
-      - ruby
       - elixir
       - mongodb
       - docker

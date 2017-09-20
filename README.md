@@ -5,30 +5,25 @@ Mish mash of Applescript, Bash Script, and Ansible to provision a new machine be
 Installs:
 * xcode command line Tools
 * homebrew
-* pip
-* ansible (did it the 'proper way' with pip)
+* pip3
+* python3
+* ansible (did it the 'proper way' with pip, after installing python)
 * git
 * elixir
-* ruby
 * node
 * mongodb
 * docker
-* thefuck
 * zsh
-* python3
 * google-chrome
-* firefox
 * iterm2
 * intellij-idea
 * webstorm
 * atom
 * sublime-text
 * charles
-* sourcetree
 * spotify
 * slack
 * oh-my-zsh
-* fuze
 * 1password
 * java
 * elasticsearch (did it non brew way, personal preference thing)
