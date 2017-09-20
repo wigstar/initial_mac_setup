@@ -8,22 +8,21 @@
       name: "{{ item }}"
       state: present
     with_items:
-      - git
-      - elixir
-      - ruby
       - node
+      - git
+      - ruby
+      - elixir
       - mongodb
       - docker
-      - thefuck
       - zsh
       - wget
-      - python3
 
   - name: Brew cask install applications
     homebrew_cask:
       name: "{{ item }}"
       state: present
     with_items:
+      - spectacle
       - google-chrome
       - firefox
       - iterm2
@@ -32,7 +31,6 @@
       - atom
       - sublime-text
       - charles
-      - sourcetree
       - spotify
       - slack
       - 1password
@@ -46,24 +44,3 @@
       src: ./zshrc
       dest: ~/.zshrc
 
-  - name: Create projects directory
-    file:
-      path: ~/projects
-      state: directory
-
-  - name: Create tmp directory
-    file:
-      path: ~/tmp
-      state: directory
-    tags: fuze
-
-  - name: Install Fuze zip
-    get_url:
-      url: https://api.fuzemeeting.com/v1/launch/mac_download
-      dest: ~/tmp/Fuze.zip
-      validate_certs: false
-    tags: fuze
-
-  - name: Unarchive Fuze zip
-    shell: unzip ~/tmp/Fuze.zip -d ~/tmp && mv ~/tmp/Fuze_*.app /Applications
-    tags: fuze

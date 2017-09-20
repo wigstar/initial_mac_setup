@@ -3,7 +3,7 @@
 # Install Ansible
 echo "Downloading Ansible..."; echo
 
-brew install python
-sudo pip install ansible
+brew install python3
+sudo pip3 install ansible
 
 echo "Ansible Download Complete"; echo
