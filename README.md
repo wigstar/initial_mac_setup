@@ -3,7 +3,6 @@
 Mish mash of Applescript, Bash Script, and Ansible to provision a new machine because y'know more time to sip on tea.
 
 Installs:
-* xcode command line Tools
 * homebrew
 * pip3
 * python3
